@@ -1,4 +1,13 @@
-// IBIO <- we use this to abbreviate 
+/*
+ * FirstExample.java
+ * Example of different ways of outputting data to the screen
+ * (especially String literals (text between " ")
+ * 
+ * Note:
+ * IBIO <- we use this to abbreviate some longer
+ * Java expressions/methods
+ */
+ 
 public class FirstExample
 {
 	// special characters:
