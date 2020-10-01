@@ -70,10 +70,10 @@ public class HL11
 		System.out.println( c + " recursive calls\n" );
 		c = 0;
 		
-		System.out.println( "Fibonacci(8) = " + fibo(30) );
+		System.out.println( "Fibonacci(8) = " + fibo(8) );
 		System.out.println( c  + " recursive calls" );
 		
-		System.out.println( "Fibonacci(8) = " + fibonacci(30) );
+		System.out.println( "Fibonacci(8) = " + fibonacci(8) );
 		System.out.println( c  + " loops" );
 		
 	}
