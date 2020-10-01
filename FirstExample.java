@@ -16,7 +16,8 @@ public class FirstExample
 	public static void main (String[] args)
 	{
 		// output example
-		IBIO.output("\nHello");
+		IBIO.output("");
+		IBIO.output("Hello");
 		IBIO.output("Grade 11s!");
 		IBIO.out("What ");
 		IBIO.out("is your name");
@@ -25,4 +26,12 @@ public class FirstExample
 		IBIO.output("Thanks!");
 	}
 }
+/* OUTPUT
 
+Hello
+Grade 11s!
+What is your name?	I'm Alan!
+
+Thanks!
+
+*/
