@@ -1,7 +1,8 @@
 public class HL11
 {
-	static int c = 0;
+	static int c = 0; // we use this to count recursive calls and loops / repetitions
 	
+	// factorial recursive
 	static int factorial(int n)
 	{	
 		if(n == 0)
@@ -12,6 +13,7 @@ public class HL11
 		}
 	}
 	
+	// fibonacci recursive
 	static int fibo(int t)
 	{	
 		if(t == 0)
@@ -24,6 +26,7 @@ public class HL11
 		}
 	}
 	
+	// fibonacci iterative (loop)
 	static int fibonacci(int t)
 	{
 		c = 0;
@@ -40,6 +43,7 @@ public class HL11
 		return sum;
 	}
 	
+	// factorial iterative
 	static int fact(int n)
 	{
 		c = 0;
@@ -54,7 +58,7 @@ public class HL11
 	
 	
 	
-	// DO THE FOLLOWING
+	// main body of the program (class)-this will run
 	public static void main(String[] args)
 	{
 		c = 0;
