@@ -16,12 +16,12 @@ public class ForExample
 			IBIO.output(name);
 		}
 		IBIO.output("\n\nCounting from 1 to " + times);
-		for(int i = 1; i < times; i++)
+		for(int i = 1; i <= times; i++)
 		{
 			IBIO.out(i + " ");
 		}
 		IBIO.output("\n\nCounting from 1 to " + times + " in twos");
-		for(int i = 1; i < times; i=i+2)
+		for(int i = 1; i <= times; i=i+2)
 		{
 			IBIO.out(i + " ");
 		}
@@ -61,6 +61,7 @@ public class ForExample
 			{
 				IBIO.out("F ");
 			}
+		}
 	}
 }
 

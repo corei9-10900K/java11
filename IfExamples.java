@@ -24,7 +24,7 @@ public class IfExamples
 		if(number == 666 || number < 0)
 		{
 			IBIO.output("Wicked.");
-		
+		}
 		if(number < 0)
 		{
 			IBIO.output("Don't be so negative.");
