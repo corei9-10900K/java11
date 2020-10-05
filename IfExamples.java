@@ -16,7 +16,7 @@ public class IfExamples
 	public static void main (String[] args)
 	{
 		int number = IBIO.inputInt("Enter a number: ");
-		System.out.println(number != 666 && number > 0)
+		System.out.println(number != 666 && number > 0);
 		if(number != 666 && number > 0)
 		{
 			IBIO.output("Holy numbers, Batman!");
@@ -24,7 +24,7 @@ public class IfExamples
 		if(number == 666 || number < 0)
 		{
 			IBIO.output("Wicked.");
-		}
+		
 		if(number < 0)
 		{
 			IBIO.output("Don't be so negative.");
