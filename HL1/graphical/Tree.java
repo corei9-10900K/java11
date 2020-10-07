@@ -1,29 +1,41 @@
-import java.awt.*;
-import acm.program.*;
-import acm.graphics.*;
+/*************************************************************************
+ *  Compilation:  javac Tree.java
+ *  Execution:    java Tree N
+ *  Dependencies: StdDraw.java
+ *  
+ *  Plot a tree fractal.
+ *
+ *  % java Tree 9
+ *
+ *************************************************************************/
 
-public class Tree extends GraphicsProgram
-{
-	public void run()
-	{
-		drawTree(120, 200, 50, 90);
-	}
- 
-	public void drawTree(double x0, double y0, double len, double angle)
-	{
-		if(len > 2)
-		{
-			double x1 = x0 + len * GMath.cosDegrees(angle);
-			double y1 = y0 - len * GMath.sinDegrees(angle);
 
-			add(new GLine(x0, y0, x1, y1));
-			drawTree(x1, y1, len * 0.75, angle + 30);
-			drawTree(x1, y1, len * 0.66, angle - 50);
-		}
-	}
+public class Tree {
+
+    public static void tree(int n, double x, double y, double a, double branchRadius) {
+        double bendAngle   = Math.toRadians(60);
+        double branchAngle = Math.toRadians(60);
+        double branchRatio = .65;
+
+        double cx = x + Math.cos(a) * branchRadius;
+        double cy = y + Math.sin(a) * branchRadius;
+        
+        StdDraw.setPenRadius(.001 * Math.pow(n, 1.2));
+        StdDraw.line(x, y, cx, cy);
+        
+        if (n == 0) return;
+
+        tree(n-1, cx, cy, a + bendAngle - branchAngle, branchRadius * branchRatio);
+        tree(n-1, cx, cy, a + bendAngle + branchAngle, branchRadius * branchRatio);
+        tree(n-1, cx, cy, a + bendAngle,               branchRadius * (1 - branchRatio));
+        
+        
+  }
+
+    public static void main(String[] args) {
+        int N = Integer.parseInt(args[0]);
+        StdDraw.show(0);
+        tree(N, .5, 0, Math.PI/2, .3);
+        StdDraw.show(0);
+    }
 }
-
-/* Copy & paste the following to compile and run the Tree class:
-	javac -classpath acm.jar Tree.java
-	java -cp .:acm.jar Tree
- */
