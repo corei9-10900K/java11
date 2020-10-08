@@ -13,8 +13,8 @@
 public class Tree {
 
     public static void tree(int n, double x, double y, double a, double branchRadius) {
-        double bendAngle   = Math.toRadians(60);
-        double branchAngle = Math.toRadians(60);
+        double bendAngle   = Math.toRadians(37);
+        double branchAngle = Math.toRadians(45);
         double branchRatio = .65;
 
         double cx = x + Math.cos(a) * branchRadius;
