@@ -2,7 +2,7 @@ public class Chapter3
 {
 	
 	public static void main (String[] args)
-	{
+	{	// declaration only
 		int number;
 		// do-while loop: post-check; do first, then repeat
 		// if the expression is true
