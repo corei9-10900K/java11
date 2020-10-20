@@ -57,11 +57,4 @@ public class RecursiveSquares
 
 }
 
-/*
- * challenges: (save new versions of this class for each challenge)
- * Modify the code in the recursive method (draw) so that:
- * 1-the squares are drawn in reverse order (from smaller to larger ones)
- * 
- */
-
 
