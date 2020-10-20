@@ -2,6 +2,10 @@
  * simple class that counts the number of digits of
  * a number (integer) that has been input
  * 
+ * for information about printf:
+ * https://www.baeldung.com/java-printstream-printf
+ * https://alvinalexander.com/programming/printf-format-cheat-sheet/
+ * 
  */
 public class DigitCount
 {
