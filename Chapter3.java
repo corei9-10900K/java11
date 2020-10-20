@@ -1,3 +1,8 @@
+/*
+ * Demonstration of while loops
+ * do-while and while
+ */
+ 
 public class Chapter3
 {
 	
