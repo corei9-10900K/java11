@@ -10,9 +10,11 @@
  *************************************************************************/
 
 
-public class Tree {
+public class Tree
+{
 
-    public static void tree(int n, double x, double y, double a, double branchRadius) {
+    public static void tree(int n, double x, double y, double a, double branchRadius)
+    {
         double bendAngle   = Math.toRadians(37);
         double branchAngle = Math.toRadians(45);
         double branchRatio = .65;
@@ -32,7 +34,8 @@ public class Tree {
         
   }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         int N = Integer.parseInt(args[0]);
         StdDraw.show(0);
         tree(N, .5, 0, Math.PI/2, .3);
