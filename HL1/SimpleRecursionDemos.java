@@ -20,7 +20,6 @@ public class SimpleRecursionDemos
 		
 	}
 	
-	
 	public static void count(int n)
 	{
 		if(n < 1)
