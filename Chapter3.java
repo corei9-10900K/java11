@@ -14,13 +14,13 @@ public class Chapter3
 		do
 		{
 			number = IBIO.inputInt("Enter a number: "); //looped
-		} while(number >= 100);
+		} while(number % 2 != 0 || x <= 0 || number >= 100 );
 		IBIO.output("Thanks!");
 		
 		// while loop: pre-check; repeat only if the condition
 		// is true; if the condition is false, stop/do NOTHING
 		number = IBIO.inputInt("Enter a number: ");;
-		while(number >= 100)
+		while(x number >= 100)
 		{
 			number = IBIO.inputInt("ERROR-Enter a number: "); //looped
 		} 
