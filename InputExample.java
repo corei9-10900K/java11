@@ -2,11 +2,14 @@
  * Example to input an integer (with a prompt)
  * 
  */
+import java.util.Scanner;
+
 public class InputExample
 {
 	
 	public static void main (String[] args)
 	{
+		
 		IBIO.output("===========");
 		String name = IBIO.input("What is your name? ");
 		IBIO.output("Nice to meet you, " + name);
@@ -24,6 +27,11 @@ public class InputExample
 		IBIO.output(" years old.");
 		*/
 		//System.out.printf("So you are %,d years old.\n", age);
+		
+		Scanner keyboard = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		int x = keyboard.nextInt();
+		System.out.println(x);
 	}
 }
 
