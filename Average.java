@@ -8,7 +8,9 @@ public class Average
 		int c = 0;
 		do
 		{
-			double n = IBIO.inputDouble("Enter a number (0 exits): ");
+			double n = 
+			
+			IBIO.inputDouble("Enter a number (0 exits): ");
 			if( n == 0 )
 			{	break;
 			} else {
